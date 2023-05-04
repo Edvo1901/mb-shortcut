@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Poppins:ital,wght@0,500;1,400&display=swap');
+* {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 12px;
+}
+
+.main {
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    top: 400px;
+}
+
+.shortcut {
+    margin: 3px;
+    padding: 3px;
+}
+
+.keyboard, .description {
+    display: inline-block;
+    background: linear-gradient(
+        to top,
+        rgba(0, 153, 255, 0.5),
+        rgba(0, 0, 255, 0.1)
+    );
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    color: #ffffff99;
+    text-align: center;
+}
+
+.keyboard {
+    border: 2px solid rgba(5, 77, 171, 0.8);
+    width: 30px;
+    font-weight: bold;
+}
