@@ -1,5 +1,19 @@
 local isOn = true
 
+RegisterNetEvent("QBCore:Client:OnPlayerLoaded", function()
+    SendNUIMessage({
+        action = "open"
+    })
+    isOn = true
+end)
+
+RegisterNetEvent("QBCore:Client:OnPlayerUnload", function()
+    SendNUIMessage({
+        action = "close"
+    })
+    isOn = false
+end)
+
 RegisterNetEvent('mb-shortcut:client:triggerShortcut', function()
     if isOn then
         SendNUIMessage({

@@ -1,3 +1,5 @@
+$('.main').fadeOut(100);
+
 $(document).ready(function() {
     window.addEventListener('message', function(event) {
         var eventData = event.data;
